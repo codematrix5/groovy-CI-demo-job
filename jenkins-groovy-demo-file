@@ -4,15 +4,17 @@ pipeline
  agent any
 
  stages {
-   stage ('code clone from repo scm' ) { 
-       steps { 
-          sh 'echo, Hi this is jenkins '
+   stage ('code clone from repo scm' )
+   { 
+       steps { sh 'echo, Hi this is jenkins '
         }
-       }
+      }
 
-   stage ('build-code' ) { 
-       steps { sh 'code is building' }
-    
+   stage ('build-code' )
+   { 
+       steps { sh 'code is building'
        }
+    
+     }
   }
 }
