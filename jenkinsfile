@@ -1,13 +1,13 @@
 pipeline
 {
-    agent any 
+    agent any
 
-stages{
-    stage ('stage 1') 
-        { steps
-        {
-         echo "code clone in progress"
-         }
-       }
-   }
+stages {
+    stage ('stage 1')
+        { steps { echo 'code clone in progress' } }
+    stage ('stage 2')
+        { steps { echo 'code is build' }  }
+    stage ('stage 3')
+        { steps { echo 'deploy code to server' }  }
+}
 }
